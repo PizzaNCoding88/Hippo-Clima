@@ -1,12 +1,15 @@
-<script setup>
-
+<script>
+import Landing from './components/Landing-section.vue'
+export default{
+  components:{Landing}
+}
 </script>
 
 <template>
-  <div>
-    <main class="text-5xl text-red-800 font-bold">Test</main>
-  </div>
-  </template>
+  <main>
+    <Landing />
+  </main>
+</template>
   
 <style scoped>
 

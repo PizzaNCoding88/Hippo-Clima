@@ -3,7 +3,12 @@ export default {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   content: [],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        orange: '#F58E49',
+        gray: '#373838'
+      }
+    }
   },
   plugins: []
 }
