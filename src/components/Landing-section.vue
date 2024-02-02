@@ -10,6 +10,9 @@
             <span></span>
         </div>
     </header>
+    <main class="">
+
+    </main>
 </template>
 
 <script>

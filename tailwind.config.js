@@ -7,6 +7,9 @@ export default {
       colors: {
         orange: '#F58E49',
         gray: '#373838'
+      },
+      backgroundImage: {
+        bgImage: '../../src/images/'
       }
     }
   },

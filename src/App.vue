@@ -6,9 +6,10 @@ export default{
 </script>
 
 <template>
-  <main>
+  <div>
     <Landing />
-  </main>
+  </div>
+  
 </template>
   
 <style scoped>
