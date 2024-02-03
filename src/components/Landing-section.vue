@@ -73,15 +73,15 @@ span{
 }
 
 .sidebar{ 
-    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-end flex-row overflow-y-hidden rounded-b-xl
+    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-end flex-row overflow-y-hidden rounded-b-xl bg-[#27202386]
 }
 
 .sidebar ul{
-    @apply flex items-center justify-center gap-[35%] text-lg font-serif font-medium pb-4
+    @apply flex items-center justify-center gap-[35%] text-lg font-serif font-medium pb-4 
 }
 
 .sidebar li{
-    @apply border-[1px] border-orange px-3 py-1 rounded-xl
+    @apply border-[1px] border-orange px-2 py-[0.25px] rounded-xl
 }
 
 .open{
