@@ -85,7 +85,7 @@ span{
 }
 
 .open{
-    @apply h-40 transition-all duration-500
+    @apply h-36 transition-all duration-500
 }
 
 </style>
