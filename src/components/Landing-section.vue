@@ -81,7 +81,7 @@ span{
 }
 
 .sidebar li{
-    @apply border-[1px] border-orange px-2 py-[0.25px] rounded-xl
+    @apply border-[1px] border-orange px-2 py-[0.25px] rounded-sm
 }
 
 .open{
