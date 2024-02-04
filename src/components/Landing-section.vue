@@ -101,23 +101,18 @@ span{
 }
 
 .sidebar{ 
-    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-end flex-row overflow-y-hidden rounded-b-xl bg-[#27202386] transition-all duration-300 ease-in-out opacity-0
+    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-end flex-row overflow-y-hidden bg-[#27202386] transition-all duration-300 ease-in-out opacity-0
 }
 
 .sidebar ul{
     @apply flex items-center justify-center text-center text-lg font-serif font-medium w-full 
+    rounded-b-xl
 }
 
 .sidebar li{
-    @apply bg-orange text-black w-full py-[1px]
+    @apply bg-orange text-black w-full rounded-xl
 }
 
-.sidebar ul :nth-child(1){
-    @apply rounded-br-xl
-}
-.sidebar ul :nth-child(2){
-    @apply rounded-bl-xl
-}
 
 .open{
     @apply h-36 transition-all duration-300 ease-in-out opacity-100
