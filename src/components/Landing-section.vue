@@ -51,6 +51,7 @@ export default{
     @apply h-[100dvh]
 }
 .landing::before{
+    height: 100dvh;
     content: '';
     position: absolute;
     top: 0;
