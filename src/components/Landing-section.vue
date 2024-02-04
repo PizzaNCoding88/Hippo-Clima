@@ -1,6 +1,6 @@
 <template>
 
-    <div class="landing h-[100vh]">
+    <div class="landing">
         <header>
             <div class="logo-container">
                 <a href="/"><img src="../images/logo.png" alt="logo" /></a>
@@ -47,6 +47,9 @@ export default{
     @apply bg-bgImage
 } */
 
+.landing{
+    @apply h-[100dvh]
+}
 .landing::before{
     content: '';
     position: absolute;
