@@ -238,7 +238,7 @@ p{
 }
 
 main button{
-    @apply w-1/2 text-base text-orange border-[1px] border-orange rounded-md py-2 cursor-pointer
+    @apply w-[40%] text-base text-orange border-[1px] border-orange rounded-md py-2 cursor-pointer
 }
 
 .top-btn{
