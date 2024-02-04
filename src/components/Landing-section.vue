@@ -114,25 +114,26 @@ span{
 
 <template>
 
-    <header>
-        <div class="logo-container">
-            <a href="/"><img src="../images/logo.png" alt="logo" /></a>
-        </div>
-        <button class="burger-button" v-on:click="sidebarOpen" >
-            <span :class="{ openTop: isOpen }"></span>
-            <span></span>
-            <span :class="{ openBottom: isOpen }"></span>
-        </button>
-        <div class="sidebar" :class="{ open: isOpen }">
-            <ul>
-                <li class=""><a href="/">Servizi</a></li>
-                <li>Contatti</li>
-            </ul>
-        </div>
-    </header>
-    <main class="">
-
-    </main>
+    <div class="landing">
+        <header>
+            <div class="logo-container">
+                <a href="/"><img src="../images/logo.png" alt="logo" /></a>
+            </div>
+            <button class="burger-button" v-on:click="sidebarOpen" >
+                <span :class="{ openTop: isOpen }"></span>
+                <span></span>
+                <span :class="{ openBottom: isOpen }"></span>
+            </button>
+            <div class="sidebar" :class="{ open: isOpen }">
+                <ul>
+                    <li class=""><a href="/">Servizi</a></li>
+                    <li>Contatti</li>
+                </ul>
+            </div>
+        </header>
+        <main>
+        </main>
+    </div>
 </template>
 
 <script>
@@ -151,6 +152,24 @@ export default{
 </script>
 
 <style scoped>
+/* .landing{
+    @apply bg-bgImage
+} */
+
+.landing::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+    background: url('../src/images/landing-bg.webp') ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+    opacity: 0.2;
+}
+
 header{
     @apply w-full flex flex-row justify-between items-center p-8
 }
@@ -187,7 +206,7 @@ span{
 }
 
 .sidebar{ 
-    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-end flex-row overflow-y-hidden rounded-b-xl bg-[#27202386] transition-all duration-300 ease-in-out
+    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-end flex-row overflow-y-hidden rounded-b-xl bg-[#27202386] transition-all duration-300 ease-in-out opacity-0
 }
 
 .sidebar ul{
@@ -195,11 +214,14 @@ span{
 }
 
 .sidebar li{
-    @apply border-[1px] border-orange px-2 py-[0.25px] rounded-sm
+    @apply border-[1px] border-orange px-2 py-[0.25px] rounded-md
 }
 
 .open{
-    @apply h-36 transition-all duration-300 ease-in-out
+    @apply h-36 transition-all duration-300 ease-in-out opacity-100
 }
 
+main{
+    @apply h-[calc(100vh-104px)]
+}
 </style>

@@ -6,9 +6,9 @@ export default{
 </script>
 
 <template>
-  <div>
+  
     <Landing />
-  </div>
+  
   
 </template>
   

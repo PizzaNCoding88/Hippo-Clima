@@ -9,7 +9,8 @@ export default {
         gray: '#373838'
       },
       backgroundImage: {
-        bgImage: '../../src/images/'
+        // bgImage: '.src/images/landing-bg.webp'
+        // bgImage: "url('../../../src/images/landing-bg.webp')"
       }
     }
   },
