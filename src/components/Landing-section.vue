@@ -105,11 +105,18 @@ span{
 }
 
 .sidebar ul{
-    @apply flex items-center justify-center gap-[35%] text-lg font-serif font-medium pb-4 
+    @apply flex items-center justify-center text-center text-lg font-serif font-medium w-full 
 }
 
 .sidebar li{
-    @apply border-[1px] border-orange px-2 py-[0.25px] rounded-md
+    @apply bg-orange text-black w-full py-[1px]
+}
+
+.sidebar ul :nth-child(1){
+    @apply rounded-br-xl
+}
+.sidebar ul :nth-child(2){
+    @apply rounded-bl-xl
 }
 
 .open{
