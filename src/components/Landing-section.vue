@@ -23,6 +23,7 @@
             <button class="top-btn">Contatti</button>
             <button>Chi Siamo</button>
         </main>
+        <section class="h-screen"></section>
     </div>
 </template>
 
