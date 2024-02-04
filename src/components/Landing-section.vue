@@ -132,6 +132,10 @@ span{
             </div>
         </header>
         <main>
+            <h1>La Temperatura Perfetta Per Ogni Stagione</h1>
+            <p>Il comfort su misura per te</p>
+            <button class="top-btn">Contatti</button>
+            <button>Chi Siamo</button>
         </main>
     </div>
 </template>
@@ -222,6 +226,23 @@ span{
 }
 
 main{
-    @apply h-[calc(100vh-104px)]
+    @apply h-[calc(100vh-104px)] flex flex-col justify-center items-center text-center px-10 gap-[18vw]
 }
+
+h1{
+    @apply uppercase text-4xl font-bold leading-tight
+}
+
+p{
+    @apply text-2xl font-semibold font-serif
+}
+
+main button{
+    @apply w-1/2 text-base text-orange border-[1px] border-orange rounded-md py-2 cursor-pointer
+}
+
+.top-btn{
+    @apply bg-orange text-black
+}
+
 </style>
