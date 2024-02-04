@@ -114,7 +114,7 @@ span{
 
 <template>
 
-    <div class="landing">
+    <div class="landing h-[100dvh]">
         <header>
             <div class="logo-container">
                 <a href="/"><img src="../images/logo.png" alt="logo" /></a>
@@ -163,7 +163,7 @@ export default{
     bottom: 0;
     left: 0; 
     width: 100%;
-    background: url('../src/images/landing-bg.webp') ;
+    background: url('../images/landing-bg.webp') ;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: 45% 50%;
