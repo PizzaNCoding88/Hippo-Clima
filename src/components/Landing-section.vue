@@ -20,10 +20,9 @@
         <main>
             <h1>La Temperatura Perfetta Per Ogni Stagione</h1>
             <p>Il comfort su misura per te</p>
-            <button class="top-btn">Contatti</button>
-            <button>Chi Siamo</button>
+            <button type="button" class="top-btn"><a href="/">Contatti</a></button>
+            <button><a href="/">Chi Siamo</a></button>
         </main>
-        <section class="h-screen"></section>
     </div>
 </template>
 
@@ -63,6 +62,7 @@ export default{
     background-repeat: no-repeat;
     background-position: 45% 50%;
     opacity: 0.2;
+    z-index: -10;
 }
 
 header{
@@ -137,5 +137,6 @@ main button{
 .top-btn{
     @apply bg-orange text-black
 }
+
 
 </style>
