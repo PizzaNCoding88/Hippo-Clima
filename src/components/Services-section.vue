@@ -47,7 +47,7 @@ export default{
 
 <style scoped>
     .container{
-        @apply px-8 bg-white py-16 text-center
+        @apply px-8 bg-white py-10 text-center
     }
 
     h2{
