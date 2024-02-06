@@ -1,10 +1,10 @@
 <template>
-    <div class="container">
+    <section class="container">
         <p class="experience">Con oltre 4 decenni di esperienza nel settore riscaldamento e condizionamento, siamo i leader del settore....non cercare altrove.</p>
         <p>Qui sotto trovi alcuni dei marchi ed aziende con le quali abbiamo lavorato...contattaci per maggiori informazioni.
         </p>
         <ImagesSlider />
-    </div>
+    </section>
 </template>
 
 <script>
