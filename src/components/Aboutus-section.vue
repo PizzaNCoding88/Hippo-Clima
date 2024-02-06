@@ -19,6 +19,10 @@
 }
 
 .experience{
-    @apply font-bold text-xl
+    @apply font-bold text-2xl
+}
+
+.container :nth-child(2){
+    @apply text-lg
 }
 </style>
