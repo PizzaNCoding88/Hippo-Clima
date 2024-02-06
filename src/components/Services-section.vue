@@ -19,7 +19,7 @@ export default{
     return{
         cardsItems:[
             {
-                src: './src/images/boiler.png',
+                src: '../images/boiler.png',
                 title: 'Installazione ed assistenza caldaie',
                 text: 'Installazione nuove caldaie, manutenzione e riparazione di impianti esistenti. Ricorda che la manutenzione annuale delle caldaie é d’obbligo per legge.'
             },
