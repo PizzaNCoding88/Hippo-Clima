@@ -15,7 +15,7 @@
 }
 
 .container{
-    @apply text-black py-10 px-8 flex flex-col gap-12 text-centerd
+    @apply text-black py-10 px-8 flex flex-col gap-12 text-center
 }
 
 .experience{
