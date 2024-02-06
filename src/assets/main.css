@@ -14,24 +14,12 @@
   font: inherit;
 }
 
-/* body {
-  min-height: 100vh;
-} */
-
 html {
   color-scheme: dark;
   /* font-size: 62.5%; */
-  -webkit-text-size-adjust: none; /* for iOS Safari */
-  text-size-adjust: none; /* for other mobile browsers */
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
   scroll-behavior: smooth;
-}
-
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
 }
 
 menu:not(article menu),
@@ -54,4 +42,9 @@ summary,
 [type='submit'],
 [type='checkbox'] {
   cursor: pointer;
+}
+
+img,
+video {
+  max-width: none !important;
 }
