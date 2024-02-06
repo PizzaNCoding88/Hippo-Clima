@@ -1,8 +1,6 @@
 <template>
-    <div class="container-card">
-        <!-- {{console.log(src)}} -->
-        <img v-bind:src="src" alt="card-img">
-       <!-- <img src=" '../images' + src" alt=""> -->
+    <div class="card-container">
+            <img v-bind:src="src" alt="card-img">
         <h3>{{ title }}</h3>
         <p>{{ text }}</p>
     </div>
@@ -17,7 +15,15 @@ export default{
 </script>
 
 <style scoped>
-    .container-card{
-        @apply text-black
+    .card-container{
+        @apply text-black my-14 flex flex-col gap-6 px-4
+    }
+
+    .card-container h3{
+        @apply uppercase text-2xl text-orange font-bold
+    }
+
+    img{
+        @apply mx-auto
     }
 </style>
