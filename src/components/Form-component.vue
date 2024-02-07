@@ -2,10 +2,10 @@
     <form>
         <input type="text" name="name" id="name" placeholder="Nome">
         <label for="name"></label>
-        <input type="text" name="email" id="email" placeholder="email">
+        <input type="text" name="email" id="email" placeholder="Email">
         <label for="email"></label>
         <textarea name="Messaggio" id="messaggio" cols="30" rows="10" placeholder="Scrivi il tuo messaggio qui..."></textarea>
-        <button type="submit">Invia</button>
+        <button type="submit"></button>
         <span class="decorations first">
             <span></span>
         </span>
@@ -48,5 +48,56 @@ export default{}
     .fourth{
         @apply bottom-2 right-2
     }
+    
+    input, textarea{
+        @apply bg-[#D9D9D9] rounded-md px-3 text-[#818181]
+    }
 
+    textarea{
+        @apply py-2
+    }
+
+    input{
+        @apply py-1
+    }
+
+    #name::placeholder, #email::placeholder, textarea::placeholder{
+        @apply text-[#818181] pl-8
+    }
+
+    textarea::placeholder{
+        @apply !pl-0
+    }
+
+    #name::placeholder, #email::placeholder{
+        background-repeat: no-repeat;
+        background-size: 7%;
+        background-position: 0% 50%;
+    }
+
+    #name::placeholder{
+        background-image: url('../images/user-icon.png');
+    }
+
+    #email::placeholder{
+        background-image: url('../images/email-icon.png');
+    }
+
+    button{
+        @apply bg-orange w-[45%] mx-auto text-black py-4 rounded-md font-medium relative
+    }
+
+    button::before{
+        content: 'Invia';
+        position: absolute;
+        left: 25%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    button{
+        background-image: url('../images/send-icon.png');
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+    }
 </style>
