@@ -19,7 +19,8 @@ export default{
 }
 .container{
     background-image: url('../images/contacts-bg.webp');
-    background-size: cover;    
+    background-size: cover;
+    background-position: 60%;
 }
 
 .container::before{
