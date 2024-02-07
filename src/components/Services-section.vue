@@ -4,7 +4,7 @@
             <h2>Scopri i nostri servizi</h2>
             <ul>
                 <li v-for="(card,i) in cardsItems" v-bind:key="i">
-                    <ServicesCard v-bind:src="card.src" :title="card.title" :text="card.text " />
+                    <ServicesCard v-bind:src="card.src" :title="card.title" :text="card.text" :alt="card.alt" />
                 </li>
             </ul>
         </div>
@@ -20,21 +20,25 @@ export default{
         cardsItems:[
             {
                 src: '/images/boiler.png',
+                alt: 'boiler',
                 title: 'Installazione ed assistenza caldaie',
                 text: 'Installazione nuove caldaie, manutenzione e riparazione di impianti esistenti. Ricorda che la manutenzione annuale delle caldaie é d’obbligo per legge.'
             },
             {
                 src: '/images/aircon.png',
+                alt: 'aircon',
                 title: 'Installazione impianti di condizionamneto',
                 text: 'Grazie alle nostre certificazioni gas, siamo abilitati all’installazione di impianti di condizionamento adatti al vostro ambiente'
             },
             {
                 src: '/images/tools.png',
+                alt: 'tools',
                 title: 'Manutenzione e sanificazione impianti di condizionamento',
                 text: 'La manutenzione e sanificazione degli impianti di condizionamento non vanno sottovalutate, al fine di avere delle unitá che funzionano sempre al meglio'
             },
             {
                 src: '/images/radiator.png',
+                alt: 'radiator',
                 title: 'Installazione e manutenzione impianti di riscaldamento',
                 text: 'Cosí come la manutenzione caldaie, anche la manutenzione degli impianti di riscaldamento é obbligatoria per legge.'
             },

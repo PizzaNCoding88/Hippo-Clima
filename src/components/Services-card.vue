@@ -1,6 +1,6 @@
 <template>
     <div class="card-container">
-            <img v-bind:src="src" alt="card-img">
+            <img v-bind:src="src" :alt="alt">
         <h3>{{ title }}</h3>
         <p>{{ text }}</p>
     </div>
@@ -9,7 +9,7 @@
 <script>
 
 export default{
-    props: ['src','title', 'text'],
+    props: ['src','title', 'text', 'alt'],
     
 }
 </script>
