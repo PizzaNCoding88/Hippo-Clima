@@ -12,8 +12,8 @@
             </button>
             <div class="sidebar" :class="{ open: isOpen }">
                 <ul>
-                    <li class=""><a href="/">Servizi</a></li>
-                    <li>Contatti</li>
+                    <li class=""><a href="#servizi">Servizi</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
                 </ul>
             </div>
         </header>

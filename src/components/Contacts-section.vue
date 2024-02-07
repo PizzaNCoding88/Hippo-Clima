@@ -1,5 +1,5 @@
 <template>
-    <section class="container">
+    <section class="container" id="contatti">
         <p>Per un preventivo gratuito o maggiori informazioni, inviaci un messaggio utilizzando il modulo qui sotto, risponderemo al piú presto</p>
         <Form />
     </section>

@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container">
+        <div class="container" id="servizi">
             <h2>Scopri i nostri servizi</h2>
             <ul>
                 <li v-for="(card,i) in cardsItems" v-bind:key="i">
