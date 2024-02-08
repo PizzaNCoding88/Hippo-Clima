@@ -13,15 +13,15 @@
             <div class="sidebar" :class="{ open: isOpen }">
                 <ul>
                     <li class=""><a href="#servizi" v-on:click="closeSidebar">Servizi</a></li>
-                    <li><a href="#contatti">Contatti</a></li>
+                    <li><a href="#contatti" v-on:click="closeSidebar">Contatti</a></li>
                 </ul>
             </div>
         </header>
         <main>
             <h1>La Temperatura Perfetta Per Ogni Stagione</h1>
             <p>Il comfort su misura per te</p>
-            <button type="button" class="top-btn"><a href="/">Contatti</a></button>
-            <button><a href="/">Chi Siamo</a></button>
+            <button type="button" class="top-btn"><a href="#contatti">Contatti</a></button>
+            <button><a href="#chisiamo">Chi Siamo</a></button>
         </main>
     </div>
 </template>
