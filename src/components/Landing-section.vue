@@ -12,7 +12,7 @@
             </button>
             <div class="sidebar" :class="{ open: isOpen }">
                 <ul>
-                    <li class=""><a href="#servizi">Servizi</a></li>
+                    <li class=""><a href="#servizi" v-on:click="closeSidebar">Servizi</a></li>
                     <li><a href="#contatti">Contatti</a></li>
                 </ul>
             </div>
@@ -35,6 +35,9 @@ export default{
     },
     methods: {
         sidebarOpen(){
+            this.isOpen = !this.isOpen
+        },
+        closeSidebar(){
             this.isOpen = !this.isOpen
         }
     },
