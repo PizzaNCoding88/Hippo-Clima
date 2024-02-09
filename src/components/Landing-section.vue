@@ -72,7 +72,7 @@ header{
     @apply w-full flex flex-row justify-between items-center p-8
 }
 .logo-container{
-    @apply w-10 h-10 z-20
+    @apply w-10 h-10
 }
 
 img{
@@ -104,21 +104,18 @@ span{
 }
 
 .sidebar{ 
-    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-end flex-row overflow-y-hidden bg-[#27202386] transition-all duration-300 ease-in-out opacity-0
+    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-center flex-col overflow-y-hidden bg-[#272023f8] transition-all duration-[400ms] ease-in-out opacity-0
 }
 
 .sidebar ul{
-    @apply flex items-center justify-center text-center text-lg font-serif font-medium w-full 
-    rounded-b-xl
+    @apply flex flex-col gap-24 items-center justify-center text-center text-lg font-serif font-medium w-full rounded-b-xl
 }
 
 .sidebar li{
-    @apply bg-orange text-black w-full rounded-xl
+    @apply relative rounded-xl text-3xl italic before:w-0 before:content-[''] before:h-1 before:bg-orange before:absolute before:-bottom-2 before:rounded-sm hover:before:w-full before:transition-all before:duration-[200ms]
 }
-
-
 .open{
-    @apply h-36 transition-all duration-300 ease-in-out opacity-100
+    @apply h-screen transition-all duration-[400ms] ease-in-out opacity-100
 }
 
 main{
