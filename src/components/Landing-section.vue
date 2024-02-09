@@ -112,8 +112,10 @@ span{
 }
 
 .sidebar li{
-    @apply rounded-xl w-1/2 text-3xl
+    @apply relative rounded-xl  text-3xl before:w-0 before:content-[''] before:h-1 before:bg-orange before:absolute before:-bottom-2 before:rounded-sm hover:before:w-full before:transition-all before:duration-[200ms]
 }
+    /* hover:before:content-[''] hover:before:w-full hover:before:h-1 hover:before:absolute hover:before:bg-orange hover:before:-bottom-2 hover:before:rounded-sm */
+
 
 
 .open{
