@@ -10,6 +10,10 @@
                 <span></span>
                 <span :class="{ openBottom: isOpen }"></span>
             </button>
+            <ul>
+                <li><a href="#contatti">Contatti</a></li>
+                    <li class=""><a href="#servizi">Servizi</a></li>
+                </ul>
             <div class="sidebar" :class="{ open: isOpen }">
                 <ul>
                     <li class=""><a href="#servizi" v-on:click="closeSidebar">Servizi</a></li>
@@ -80,7 +84,7 @@ img{
 }
 
 .burger-button{
-    @apply w-8 h-8 flex flex-col justify-center items-end gap-1 z-20
+    @apply w-8 h-8 flex flex-col justify-center items-end gap-1 z-20 sm:hidden
 }
 
 .burger-button :first-child{
@@ -104,7 +108,7 @@ span{
 }
 
 .sidebar{ 
-    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-center flex-col overflow-y-hidden bg-[#272023f8] transition-all duration-[400ms] ease-in-out opacity-0
+    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-center flex-col overflow-y-hidden bg-[#272023f8] transition-all duration-[400ms] ease-in-out opacity-0 sm:hidden
 }
 
 .sidebar ul{
@@ -119,7 +123,7 @@ span{
 }
 
 main{
-    @apply h-[calc(100vh-104px)] flex flex-col justify-center items-center text-center px-10 gap-[18vw]
+    @apply h-[calc(100vh-104px)] flex flex-col justify-center items-center text-center px-10 gap-[18vw] sm:gap-[10vw]
 }
 
 h1{
@@ -136,6 +140,10 @@ main button{
 
 .top-btn{
     @apply bg-orange text-black
+}
+
+header ul{
+    @apply hidden sm:flex sm:flex-row gap-14 text-orange font-semibold text-xl
 }
 
 </style>
