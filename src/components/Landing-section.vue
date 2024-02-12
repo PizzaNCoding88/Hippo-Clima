@@ -30,7 +30,7 @@
 export default{
     data(){
         return{
-            isOpen: false
+            isOpen: false,
         }
     },
     methods: {
@@ -123,7 +123,7 @@ main{
 }
 
 h1{
-    @apply uppercase text-4xl font-bold leading-tight
+    @apply uppercase text-4xl font-bold leading-tight transition-opacity 
 }
 
 p{
@@ -137,6 +137,5 @@ main button{
 .top-btn{
     @apply bg-orange text-black
 }
-
 
 </style>
