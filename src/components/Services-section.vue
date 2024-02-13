@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="container" id="servizi">
+        <div class="container-1" id="servizi">
             <h2>Scopri i nostri servizi</h2>
             <ul>
                 <li v-for="(card,i) in cardsItems" v-bind:key="i">
@@ -27,7 +27,7 @@ export default{
             {
                 src: '/images/aircon.png',
                 alt: 'aircon',
-                title: 'Installazione impianti di condizionamneto',
+                title: 'Installazione impianti di condizionamento',
                 text: 'Grazie alle nostre certificazioni gas, siamo abilitati all’installazione di impianti di condizionamento adatti al vostro ambiente'
             },
             {
@@ -50,8 +50,13 @@ export default{
 </script>
 
 <style scoped>
-    .container{
+    .container-1{
         @apply px-8 bg-white py-10 text-center
+    }
+
+    .container-1{
+        background-image: url('../images/white-brick.jpg');
+        background-size: contain;        
     }
 
     h2{

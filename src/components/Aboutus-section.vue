@@ -1,5 +1,5 @@
 <template>
-    <section class="container" id="chisiamo">
+    <section class="container-1" id="chisiamo">
         <p class="experience">Con oltre 4 decenni di esperienza nel settore riscaldamento e condizionamento, siamo i leader del settore....non cercare altrove.</p>
         <p>Qui sotto trovi alcuni dei marchi ed aziende con le quali abbiamo lavorato...contattaci per maggiori informazioni.
         </p>
@@ -15,11 +15,11 @@ export default{
 </script>
 
 <style scoped>
-.container{
+.container-1{
     background-image: url('../images/background.png');
 }
 
-.container{
+.container-1{
     @apply text-black py-10 px-8 flex flex-col gap-12 text-center
 }
 
@@ -27,7 +27,7 @@ export default{
     @apply font-bold text-2xl
 }
 
-.container :nth-child(2){
+.container-1 :nth-child(2){
     @apply text-lg
 }
 </style>
