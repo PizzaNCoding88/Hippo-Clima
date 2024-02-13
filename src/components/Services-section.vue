@@ -55,7 +55,7 @@ export default{
     }
 
     .container-1{
-        background-image: url('../images/white-brick.jpg');
+        background-image: url('../images/white-brick.webp');
         background-size: contain;        
     }
 
