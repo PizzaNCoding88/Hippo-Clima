@@ -56,10 +56,18 @@ export default{
 
     .container-1{
         background-image: url('../images/white-brick.webp');
-        background-size: contain;        
+        background-size: cover;        
     }
 
     h2{
         @apply uppercase text-4xl text-black font-bold
     }
+
+    .container-1 ul{
+        @apply md:grid md:grid-cols-2 md:grid-rows-2 md:gap-4 md:mt-10
+    }
+
+    /* .container-1 ul li{
+        @apply md:bg-[#0000002b]
+    } */
 </style>
