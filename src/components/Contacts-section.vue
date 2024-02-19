@@ -16,7 +16,7 @@ export default{
 <style scoped>
 
 .container-1{
-    @apply  py-10 px-8 flex flex-col gap-12 text-center relative
+    @apply  py-10 px-8 flex flex-col gap-12 text-center relative lg:py-20 lg:px-16
 }
 .container-1{
     background-image: url('../images/contacts-bg.webp');
@@ -36,7 +36,7 @@ export default{
 }
 
 p{
-    @apply text-2xl font-semibold z-20 md:text-3xl
+    @apply text-2xl font-semibold z-20 md:text-3xl lg:text-4xl
 }
 
 .copyright{

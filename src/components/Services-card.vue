@@ -16,11 +16,15 @@ export default{
 
 <style scoped>
     .card-container{
-        @apply text-black my-14 flex flex-col gap-6 px-4 md:bg-[rgba(0,0,0,0.35)] md:py-8 md:h-full md:my-0 md:rounded-lg
+        @apply text-black my-14 flex flex-col gap-6 px-4 md:bg-[rgba(0,0,0,0.35)] md:py-8 md:h-full md:my-0 md:rounded-lg lg:max-w-[460px]
     }
 
     .card-container h3{
-        @apply uppercase text-2xl text-orange font-bold
+        @apply uppercase text-2xl text-orange font-bold lg:text-3xl
+    }
+
+    .card-container p{
+        @apply lg:text-xl
     }
 
     img{

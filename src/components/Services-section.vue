@@ -51,7 +51,7 @@ export default{
 
 <style scoped>
     .container-1{
-        @apply px-8 bg-white py-10 text-center
+        @apply px-8 bg-white py-10 text-center lg:px-16 lg:py-20
     }
 
     .container-1{
@@ -64,10 +64,6 @@ export default{
     }
 
     .container-1 ul{
-        @apply md:grid md:grid-cols-2 md:grid-rows-2 md:gap-4 md:mt-10
+        @apply md:grid md:grid-cols-2 md:grid-rows-2 md:gap-4 md:mt-10 md:justify-items-center lg:gap-10 lg:max-w-[80%] lg:mx-auto xl:max-w-[75%]
     }
-
-    /* .container-1 ul li{
-        @apply md:bg-[#0000002b]
-    } */
 </style>
