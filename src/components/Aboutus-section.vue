@@ -34,4 +34,5 @@ export default{
 .container-1 :nth-child(2){
     @apply text-lg md:text-xl 
 }
+
 </style>
