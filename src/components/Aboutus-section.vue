@@ -20,7 +20,11 @@ export default{
 }
 
 .container-1{
-    @apply text-black py-10 px-8 flex flex-col gap-12 text-center
+    @apply text-black py-10 flex flex-col gap-12 text-center
+}
+
+.container-1>*:not(:last-child){
+    @apply px-8
 }
 
 .experience{
@@ -28,6 +32,6 @@ export default{
 }
 
 .container-1 :nth-child(2){
-    @apply text-lg md:text-xl
+    @apply text-lg md:text-xl 
 }
 </style>
