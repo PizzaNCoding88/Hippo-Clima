@@ -2,6 +2,7 @@
     <section class="container-1" id="contatti">
         <p>Per un preventivo gratuito o maggiori informazioni, inviaci un messaggio utilizzando il modulo qui sotto, risponderemo al piú presto</p>
         <Form />
+        <p class="copyright">&#169; Hippo Clima Srl</p>
     </section>
 </template>
 
@@ -35,6 +36,10 @@ export default{
 }
 
 p{
-    @apply text-2xl font-semibold z-20
+    @apply text-2xl font-semibold z-20 md:text-3xl
+}
+
+.copyright{
+    @apply text-lg md:text-xl
 }
 </style>

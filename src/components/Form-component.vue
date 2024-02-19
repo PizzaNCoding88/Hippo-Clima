@@ -22,7 +22,7 @@ export default{}
 
 <style scoped>
     form{
-        @apply flex flex-col gap-3 p-8 z-20 bg-[#818181] relative
+        @apply flex flex-col gap-3 p-8 z-20 bg-[#818181] relative md:w-[550px] md:mx-auto
     }
 
     .decorations{
@@ -77,14 +77,16 @@ export default{}
 
     #name::placeholder{
         background-image: url('../images/user-icon.png');
+        background-size: contain;
     }
-
+    
     #email::placeholder{
         background-image: url('../images/email-icon.png');
+        background-size: contain;
     }
 
     button{
-        @apply bg-orange w-[45%] mx-auto text-black py-4 rounded-md font-medium relative
+        @apply bg-orange w-[45%] mx-auto text-black py-4 rounded-md font-medium relative max-w-[130px]
     }
 
     button::before{

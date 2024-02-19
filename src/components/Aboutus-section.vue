@@ -24,10 +24,10 @@ export default{
 }
 
 .experience{
-    @apply font-bold text-2xl
+    @apply font-bold text-2xl md:text-3xl
 }
 
 .container-1 :nth-child(2){
-    @apply text-lg
+    @apply text-lg md:text-xl
 }
 </style>
