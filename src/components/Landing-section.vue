@@ -24,8 +24,10 @@
         <main>
             <h1>La Temperatura Perfetta Per Ogni Stagione</h1>
             <p>Il comfort su misura per te</p>
-            <button type="button" class="top-btn"><a href="#contatti">Contatti</a></button>
-            <button><a href="#chisiamo">Chi Siamo</a></button>
+            <div class="buttons-container">
+                <button type="button" class="top-btn"><a href="#contatti">Contatti</a></button>
+                <button><a href="#chisiamo">Chi Siamo</a></button>
+            </div>
         </main>
     </div>
 </template>
@@ -70,6 +72,33 @@ export default{
     background-position: 45% 50%;
     opacity: 0.2;
     z-index: -10;
+}
+
+@media only screen and (min-width: 768px) {
+    .landing::after{
+        height: 100dvh;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0; 
+        width: 50%;
+        background: url('../images/fabric.png') ;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: 45% 50%;
+        opacity: 0.9;
+        z-index: -10;
+    }
+
+    .landing::before{
+        right:0;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 50%;
+    }
+    
 }
 
 header{
@@ -123,7 +152,7 @@ span{
 }
 
 main{
-    @apply h-[calc(100vh-104px)] flex flex-col justify-center items-center text-center px-10 gap-[18vw] sm:gap-[10vw]
+    @apply h-[calc(100vh-104px)] flex flex-col justify-center items-center text-center px-10 gap-[18vw] sm:gap-[10vw] md:text-left md:w-1/2 md:pr-5
 }
 
 h1{
@@ -134,8 +163,12 @@ p{
     @apply text-2xl font-semibold font-serif
 }
 
+.buttons-container{
+    @apply flex flex-col w-full items-center gap-10 md:flex-row
+}
+
 main button{
-    @apply w-[40%] text-base text-orange border-[1px] border-orange rounded-md py-2 cursor-pointer
+    @apply w-[40%] text-base text-orange border-[1px] border-orange rounded-md py-2 cursor-pointer max-w-[185px]
 }
 
 .top-btn{

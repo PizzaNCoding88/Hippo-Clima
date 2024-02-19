@@ -1,7 +1,8 @@
 <template>
-    <section class="container" id="contatti">
+    <section class="container-1" id="contatti">
         <p>Per un preventivo gratuito o maggiori informazioni, inviaci un messaggio utilizzando il modulo qui sotto, risponderemo al piú presto</p>
         <Form />
+        <p class="copyright">&#169; Hippo Clima Srl</p>
     </section>
 </template>
 
@@ -14,16 +15,16 @@ export default{
 
 <style scoped>
 
-.container{
+.container-1{
     @apply  py-10 px-8 flex flex-col gap-12 text-center relative
 }
-.container{
+.container-1{
     background-image: url('../images/contacts-bg.webp');
     background-size: cover;
     background-position: 60%;
 }
 
-.container::before{
+.container-1::before{
     content: "";
     position: absolute;
     top:0;
@@ -35,6 +36,10 @@ export default{
 }
 
 p{
-    @apply text-2xl font-semibold z-20
+    @apply text-2xl font-semibold z-20 md:text-3xl
+}
+
+.copyright{
+    @apply text-lg md:text-xl
 }
 </style>
