@@ -102,7 +102,7 @@ export default{
 }
 
 header{
-    @apply w-full flex flex-row justify-between items-center p-8
+    @apply w-full flex flex-row justify-between items-center p-8 lg:px-16
 }
 .logo-container{
     @apply w-10 h-10
@@ -152,15 +152,15 @@ span{
 }
 
 main{
-    @apply h-[calc(100vh-104px)] flex flex-col justify-center items-center text-center px-10 gap-[18vw] sm:gap-[10vw] md:text-left md:w-1/2 md:pr-5
+    @apply h-[calc(100vh-104px)] flex flex-col justify-center items-start text-center px-10 gap-[18vw] sm:gap-[10vw] md:text-left md:w-1/2 md:pr-5 lg:pl-16
 }
 
 h1{
-    @apply uppercase text-4xl font-bold leading-tight transition-opacity 
+    @apply uppercase text-4xl font-bold leading-tight transition-opacity lg:text-5xl
 }
 
 p{
-    @apply text-2xl font-semibold font-serif
+    @apply text-2xl font-serif lg:text-3xl
 }
 
 .buttons-container{
@@ -176,7 +176,7 @@ main button{
 }
 
 header ul{
-    @apply hidden sm:flex sm:flex-row gap-14 text-orange font-semibold text-xl
+    @apply hidden sm:flex sm:flex-row gap-14 text-orange font-semibold text-xl lg:text-2xl
 }
 
 </style>
