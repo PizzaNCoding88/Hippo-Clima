@@ -1,7 +1,7 @@
 <template>
 
     <div class="landing">
-        <header>
+        <header class="animate__zoomIn animate__animated">
             <div class="logo-container">
                 <a href="/"><img src="../images/logo.png" alt="logo" /></a>
             </div>
@@ -22,9 +22,9 @@
             </div>
         </header>
         <main>
-            <h1>La Temperatura Perfetta Per Ogni Stagione</h1>
-            <p>Il comfort su misura per te</p>
-            <div class="buttons-container">
+            <h1 class="animate__animated animate__backInDown">La Temperatura Perfetta Per Ogni Stagione</h1>
+            <p class="animate__animated animate__backInLeft">Il comfort su misura per te</p>
+            <div class="buttons-container animate__animated animate__zoomIn animate__delay-1s">
                 <button type="button" class="top-btn"><a href="#contatti">Contatti</a></button>
                 <button><a href="#chisiamo">Chi Siamo</a></button>
             </div>
@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import 'animate.css';
 export default{
     data(){
         return{
@@ -51,12 +52,9 @@ export default{
 </script>
 
 <style scoped>
-/* .landing{
-    @apply bg-bgImage
-} */
 
 .landing{
-    @apply h-[100dvh]
+    @apply h-[100dvh] relative z-0
 }
 .landing::before{
     height: 100dvh;
@@ -137,7 +135,7 @@ span{
 }
 
 .sidebar{ 
-    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-center flex-col overflow-y-hidden bg-[#272023f8] transition-all duration-[400ms] ease-in-out opacity-0 sm:hidden
+    @apply absolute left-0 top-0 w-full h-0 text-orange flex justify-center items-center flex-col overflow-y-hidden bg-[#272023f8] transition-all duration-[400ms] ease-in-out opacity-0 sm:hidden !z-10
 }
 
 .sidebar ul{
@@ -152,7 +150,7 @@ span{
 }
 
 main{
-    @apply h-[calc(100vh-104px)] flex flex-col justify-center items-start text-center px-10 gap-[18vw] sm:gap-[10vw] md:text-left md:w-1/2 md:pr-5 lg:pl-16
+    @apply h-[calc(100vh-104px)] flex flex-col justify-center items-center text-center px-10 gap-[18vw] sm:gap-[10vw] md:text-left md:w-1/2 md:pr-5 md:items-start lg:pl-16 relative -z-10
 }
 
 h1{
@@ -165,6 +163,10 @@ p{
 
 .buttons-container{
     @apply flex flex-col w-full items-center gap-10 md:flex-row
+}
+
+.buttons-container button{
+    @apply lg:text-xl
 }
 
 main button{
