@@ -14,6 +14,10 @@
   font: inherit;
 }
 
+:root {
+  --animate-delay: 500ms !important;
+}
+
 html {
   color-scheme: dark;
   /* font-size: 62.5%; */
