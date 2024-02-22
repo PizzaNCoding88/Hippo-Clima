@@ -3,13 +3,35 @@
         <div class="container-1" id="servizi">
             <h2>Scopri i nostri servizi</h2>
             <ul>
-                <li v-for="(card,i) in cardsItems" v-bind:key="i">
+                <li v-for="(card,i) in cardsItems" v-bind:key="i" 
+                v-motion
+                :initial="{opacity:0, y:200}"
+                :visibleOnce="{opacity:1, y:0,
+                transition:{
+                    type: 'spring',
+                    stiffness: 50,
+                    damping: 15,
+                    mass: 0.5,
+                }}"
+                >
                     <ServicesCard v-bind:src="card.src" :title="card.title" :text="card.text" :alt="card.alt" />
                 </li>
             </ul>
         </div>
     </section>
 </template>
+<!-- <template>
+    <section>
+        <div class="container-1" id="servizi">
+            <h2>Scopri i nostri servizi</h2>
+            <ul>
+                <li v-for="(card,i) in cardsItems" v-bind:key="i" v-motion-slide-visible-once-bottom>
+                    <ServicesCard v-bind:src="card.src" :title="card.title" :text="card.text" :alt="card.alt" />
+                </li>
+            </ul>
+        </div>
+    </section>
+</template> -->
 
 <script>
 import ServicesCard from './Services-card.vue'
