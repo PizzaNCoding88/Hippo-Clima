@@ -1,6 +1,17 @@
 <template>
     <section class="container-1" id="chisiamo">
-        <p class="experience">Con oltre 4 decenni di esperienza nel settore riscaldamento e condizionamento, siamo i leader del settore....non cercare altrove.</p>
+        <p
+        v-motion
+                :initial="{opacity:0}"
+                :visibleOnce="{opacity:1,
+                transition:{
+                    type: 'spring',
+                    stiffness: 50,
+                    damping: 15,
+                    mass: 0.5,
+                    delay: 250
+                }}" 
+        class="experience">Con oltre 4 decenni di esperienza nel settore riscaldamento e condizionamento, siamo i leader del settore....non cercare altrove.</p>
         <p>Qui sotto trovi alcuni dei marchi ed aziende con le quali abbiamo lavorato...contattaci per maggiori informazioni.
         </p>
         <ImagesSlider />
